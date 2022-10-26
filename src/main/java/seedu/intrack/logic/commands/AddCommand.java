@@ -19,7 +19,7 @@ public class AddCommand extends Command {
 
     public static final String COMMAND_WORD = "add";
 
-    public static final String MESSAGE_USAGE = COMMAND_WORD + ": Adds an internship to the tracker.\n"
+    public static final String MESSAGE_USAGE = COMMAND_WORD + ": Adds an internship to the tracker: %1$s"
             + "Parameters: "
             + PREFIX_NAME + "NAME "
             + PREFIX_POSITION + "POSITION "

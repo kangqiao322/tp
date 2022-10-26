@@ -88,6 +88,29 @@ public class Internship {
         return Collections.unmodifiableSet(tags);
     }
 
+    /**
+     * Adds a tag to the set of existing tags.
+     * @param tag to be added.
+     */
+    public void addTag(Tag tag) {
+        tags.add(tag);
+    }
+
+    /**
+     * Deletes a tag from the set of existing tags.
+     * @param tag to be deleted.
+     */
+    public void deleteTag(Tag tag) {
+        tags.remove(tag);
+    }
+
+    /**
+     * Deletes all tags from the set of existing tags.
+     */
+    public void clearTag() {
+        tags.clear();
+    }
+
     public Remark getRemark() {
         return remark;
     }
