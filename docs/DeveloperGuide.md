@@ -274,7 +274,7 @@ the list, `TASKNAME` must not be an empty string, and `TASKTIME` must be in the 
 
 #### How it is implemented
 
-The `addtask` command is facilitated by the `AddTaskCommand` and `AddTaskCommandParser`. It uses the 
+The `addtask` command is facilitated by the `AddTaskCommand` and `AddTaskCommandParser`. It uses the
 `List#get(int index)` on the list of internship applications returned from the `Model#getFilteredInternshipList()` to
 get the target `Internship` object to be updated. A new `Internship` object is then created with the new `Task` updated
 in the `List<Task>`. The `InTrack#setInternship(Internship target, Internship editedInternship)` which is exposed in the
